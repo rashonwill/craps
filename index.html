@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+<title>Craps</title>
+<link rel ="stylesheet" href ="index.css">
+<link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  
+  <script  defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script defer src="index.js"></script>
+  
+</head>
+
+<div class="bid">
+  <div class="moneybag">
+    <h1>Cash Balance: $100</h1>  
+  </div> 
+</div>
+
+ <div class = "points">
+   <h1 id ="points"> Set Points: </h1>
+   
+   <h2 id ="pointsRoll"> Roll Points: </h2>
+</div>
+
+<div class ="buttons">
+   <button class = "btn" id="bet"> PLACE BET </button>
+    <button class = "btn" id="roll"> ROLL DICE </button>
+  <button class = "btn" id="1stroll"> COME OUT ROLL </button>
+ 
+</div>
+
+
+
+<main>
+
+
+<div class ="container"> 
+ 
+  <div class="cube" id= "dice1">
+<div class ="front" id ="value" data-value ="1">
+  <span class ="dot dot1"></span>
+  </div>
+    
+ <div class ="back" id ="value" data-value ="2">
+  <span class ="dot dot1"></span>
+   <span class ="dot dot2"></span>
+  </div>  
+    
+ <div class ="right" id ="value" data-value ="3">
+  <span class ="dot dot1"></span>
+   <span class ="dot dot2"></span>
+   <span class ="dot dot3"></span>
+  </div>  
+    
+    
+     <div class ="left"  id ="value" data-value ="4">
+  <span class ="dot dot1"></span>
+   <span class ="dot dot2"></span>
+   <span class ="dot dot3"></span>
+   <span class ="dot dot4"></span>    
+  </div>   
+    
+    
+       <div class ="top" id ="value" data-value ="5">
+  <span class ="dot dot1"></span>
+   <span class ="dot dot2"></span>
+   <span class ="dot dot3"></span>
+   <span class ="dot dot4"></span>  
+   <span class ="dot dot5"></span>  
+  </div>    
+    
+    
+       <div class ="bottom" id ="value" data-value ="6">
+  <span class ="dot dot1"></span>
+   <span class ="dot dot2"></span>
+   <span class ="dot dot3"></span>
+   <span class ="dot dot4"></span>  
+   <span class ="dot dot5"></span>
+   <span class ="dot dot6"></span>      
+  </div>
+  </div>
+</div>
+  </div>
+
+  
+  <div class = "container">
+   
+      <div class="cube" id= "dice2">
+<div class ="front" data-value ="1">
+  <span class ="dot dot1"></span>
+  </div>
+    
+ <div class ="back" data-value ="2">
+  <span class ="dot dot1"></span>
+   <span class ="dot dot2"></span>
+  </div>  
+    
+ <div class ="right" data-value ="3">
+  <span class ="dot dot1"></span>
+   <span class ="dot dot2"></span>
+   <span class ="dot dot3"></span>
+  </div>  
+    
+    
+     <div class ="left" data-value ="4">
+  <span class ="dot dot1"></span>
+   <span class ="dot dot2"></span>
+   <span class ="dot dot3"></span>
+   <span class ="dot dot4"></span>    
+  </div>   
+    
+    
+       <div class ="top" data-value ="5">
+  <span class ="dot dot1"></span>
+   <span class ="dot dot2"></span>
+   <span class ="dot dot3"></span>
+   <span class ="dot dot4"></span>  
+   <span class ="dot dot5"></span>  
+  </div>    
+    
+    
+       <div class ="bottom" data-value ="6">
+  <span class ="dot dot1"></span>
+   <span class ="dot dot2"></span>
+   <span class ="dot dot3"></span>
+   <span class ="dot dot4"></span>  
+   <span class ="dot dot5"></span>
+   <span class ="dot dot6"></span>      
+  </div>
+  </div>
+  </div>
+
+<div class="message">
+      <div class="note"></div>
+      <button class="playagain"> Play Again </button>
+      </div>
+
+<div class="game-rules">
+  <div class="title">
+<h1> Craps </h1>
+</div>
+  <h3> Game Rules</h3>
+  <br>
+  <p> An even money bet, made on the first roll of the dice (known as the “come out roll”). You win if a 7 or 11 roll, or lose if 2, 3, or 12 roll (known as “craps”). Any other number that rolls becomes the “point” and the point must roll again before a 7 to win. </p>
+ 
+ 
+  <p> Player has $100 cash balance and can make a $10 bet each round. If player wins the round, their cash balance will increase by $10, if player loses round the cash balance will decrease by $10. Game will be over when user depletes their cash balance.</p>
+  <br>
+
+  
+  <h3> How to Play</h3>
+  <br>
+  <br>
+  <ol>
+    <li> Place Bet </li>
+    <li> Roll Come Out Roll</li>
+    <li> Roll Dice to score the same points as the Come Out Roll</li>
+  
+  </ol>
+  <button class="play"> Lets Play! </button>
+    </div>
+ 
+<div class="newGame">
+  <h5> You're Bankrupt 🤭 </h5>
+
+  <button class="btn" onClick="restartGame();"> New Game </button>
+  <button class="btn"> Exit </button>
+</div>
+
+
+
+</html>
